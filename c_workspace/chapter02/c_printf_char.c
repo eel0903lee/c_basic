@@ -1,23 +1,23 @@
 #include <stdio.h>
 /**
- * vsc ë‹¨ì¶•í‚¤
- * Ctrl + Alt + N : C ì‹¤í–‰
- * Shift + Alt + â†“ or â†‘ : Line ë³µì‚¬
- * Alt + â†“ or â†‘ : Line ì´ë™
- * Ctrl + x : line ì‚­ì œ
- * Ctrl + space : ìë™ ì™„ì„±
+ * vsc ´ÜÃàÅ°
+ * Ctrl + Alt + N : C ½ÇÇà
+ * Shift + Alt + ¡é or ¡è : Line º¹»ç
+ * Alt + ¡é or ¡è : Line ÀÌµ¿
+ * Ctrl + x : line »èÁ¦
+ * Ctrl + space : ÀÚµ¿ ¿Ï¼º
 */
 
-// '' : ë¬¸ì(character) 'A', 'B', '!'
-// "" : ë¬¸ìì—´(string) "A", "ABC", "A!" ... ì´ê±° ë§ì´ ì”€
+// '' : ¹®ÀÚ(character) 'A', 'B', '!'
+// "" : ¹®ÀÚ¿­(string) "A", "ABC", "A!" ... ÀÌ°Å ¸¹ÀÌ ¾¸
 
-// â€» ë¬¸ì('')ë¥¼ ì‚¬ìš©í•˜ëŠ” ê²½ìš°
-//  + í‚¤ë³´ë“œ ì œì–´ë¥¼ í•  ë•Œ ì‚¬ìš©
+// ¡Ø ¹®ÀÚ('')¸¦ »ç¿ëÇÏ´Â °æ¿ì
+//  + Å°º¸µå Á¦¾î¸¦ ÇÒ ¶§ »ç¿ë
 int main(void)
 {
     /* code */
     printf("%c\n", 'A');
     printf("%S\n", "A");
-    printf("%cì€ %sì…ë‹ˆë‹¤. \n", '1', "first");
+    printf("%cÀº %sÀÔ´Ï´Ù. \n", '1', "first");
     return 0;
 }
