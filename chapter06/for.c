@@ -11,7 +11,7 @@ int main(void) {
 
     // 반복횟수가 정해짐
     // → 반복횟수 count : i(index) 변수
-    for(int i = 0; i <3; i++) {
+    for(int i = 1; i <3; i++) {
         // i = 0, 1, 2 → 3번 반복
     /**
      *for(int i = 1; i< 10; i++) {
