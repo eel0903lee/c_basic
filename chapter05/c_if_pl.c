@@ -21,6 +21,6 @@ int main(void) {
     
     // else if(age <= 19) {
     //     printf("미성년자입니다. \n");
-    //     printf("주류 구매가 불가낭합니다. \n");
+    //     printf("주류 구매가 불가능합니다. \n");
 
     }

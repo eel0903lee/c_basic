@@ -20,6 +20,4 @@ int main(void){
     } else {
         printf("%d이/가 %d과/와 같다", num1, num2);
     }
-
-    
 }

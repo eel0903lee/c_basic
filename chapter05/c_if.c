@@ -3,7 +3,7 @@
 /**
  *  if문(제어문) 기본 문법
  * 
- *  if, else 한번만, if else 여러번 가능
+ *  if, else 한번만, else if 여러번 가능
  * 
  * if(조건) {
  *   실행문
