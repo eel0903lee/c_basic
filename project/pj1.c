@@ -5,21 +5,26 @@
  * ¿¹ : 57256
 */
 int main(void) {
-    int num = 57256;
-    int total;
+    //¼÷Á¦ 1. ¼ýÀÚ¸¦ »ç¿ëÀÚ¿¡°Ô ÀÔ·Â(scanf)
+    int num=0;
+    int total=0;
+    printf("¼ýÀÚ : ");
+    scanf("%d", &num);
 
-    // ÄÚµå
-    // num / 10000
-    // num / 1000 - (num / 10000 * 10)
-    // num / 100 - (num / 10000*100 + num/1000*10)
-    // num / 10 - (num/10000*1000 + num/1000*100 + num / 100)
-    // num / 1 - (num/10000*10000 + num/1000*100 + num / 100 + num / 10)
-    int a = num / 10000;
-    int b = num / 1000 - (num / 10000 * 10);
-    int c = num / 100 - (a+b); 
-    int d = num / 10 - (a+b+c);
-    int e = num / 1 - (a+b+c+d);
-    total = a+b+c+d+e;
+    // 57256 ¡À 10 ¡æ ¸ò : 5725, ³ª¸ÓÁö : 6
+    // 5725  ¡À 10 ¡æ ¸ò : 572,  ³ª¸ÓÁö  : 5
+    // 572   ¡À 10 ¡æ ¸ò : 57,   ³ª¸ÓÁö : 2
+    // 57    ¡À 10 ¡æ ¸ò : 5,    ³ª¸ÓÁö 2
+    // 5     ¡À 10 ¡æ ¸ò : 0,    ³ª¸ÓÁö 5
+    while (num>0) {
+        total += num % 10;
+        num = num / 10;
+    }
+    // for(int i=1; i<5; i++) {
+    //      total += (num%10);
+    //      num = num/10 ;
+    // }
+
     // 5 + 7 + 2 + 5 + 6 = 25
-    printf("ÃÑÇÕ %d\n", total);
+    printf("ÃÑÇÕ : %d\n", total);
 }
